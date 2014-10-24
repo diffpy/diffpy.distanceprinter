@@ -42,3 +42,4 @@ nosetests.xml
 # version information
 setup.cfg
 /DistancePrinter/version.cfg
+/DistancePrinter/gitarchive.cfg
