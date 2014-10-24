@@ -41,4 +41,4 @@ nosetests.xml
 
 # version information
 setup.cfg
-/dpx/DistancePrinter/version.cfg
+/DistancePrinter/version.cfg
