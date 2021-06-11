@@ -83,10 +83,16 @@ def formatResults(stru, distlist, complete, all0ddij, **kw):
     
     if complete:
         for dist in distlist:
-            lines.append('%s-%s:\t%2.6f' % (dist[2], dist[3], dist[0]))
+            try:
+                lines.append('%s-%s:\t%2.6f' % (dist[2].decode('utf-8'), dist[3].decode('utf-8'), dist[0]))
+            except AttributeError:
+                lines.append('%s-%s:\t%2.6f' % (dist[2], dist[3], dist[0]))
     else:
         for dist in distlist:
-            lines.append('%s-%s:\t%2.6f (%1.1e)' % (dist[2], dist[3], dist[0], dist[1]))
+            try:
+                lines.append('%s-%s:\t%2.6f (%1.1e)' % (dist[2].decode('utf-8'), dist[3].decode('utf-8'), dist[0], dist[1]))
+            except:
+                lines.append('%s-%s:\t%2.6f (%1.1e)' % (dist[2], dist[3], dist[0], dist[1]))
     rv = '\n'.join(lines)
     return rv
 

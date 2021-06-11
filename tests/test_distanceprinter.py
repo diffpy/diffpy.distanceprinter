@@ -24,18 +24,12 @@ def test_distanceprinter(monkeypatch):
     f = open(generated_file_path, 'r', encoding="utf-8")
     rv0 = f.readlines()
     rv0 = ''.join(rv0)
-    try:
-        resultstr = rv0.encode("utf-8")
-    except:
-        pass
+    resultstr = rv0
     os.remove(generated_file_path)
     output_file_dir = os.path.join(current_module_dir, "ouputs")
     example_output = os.path.join(output_file_dir, "temp_test.res")
     f = open(example_output, 'r', encoding="utf-8")
     rv1 = f.readlines()
     rv1 = ''.join(rv1)
-    try:
-        teststr = rv1.encode("utf-8")
-    except:
-        pass
+    teststr = rv1
     assert resultstr == teststr
