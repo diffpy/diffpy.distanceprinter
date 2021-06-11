@@ -12,6 +12,8 @@
 #
 ##############################################################################
 
+from builtins import zip
+from builtins import range
 import os
 import sys
 import itertools
@@ -39,14 +41,14 @@ def calDistance(strufile, atomi, atomj, lb, ub, complete):
     distlist = np.zeros(len(dij), dtype=dtypec)
     
     if not complete:
-        for i, dist, dd, ij in itertools.izip(range(len(dij)), dij, ddij, ij0):
+        for i, dist, dd, ij in zip(list(range(len(dij))), dij, ddij, ij0):
             if ij[0] > ij[1]:
                 distlist[i] = (dist, dd, ele[ij[1]], ele[ij[0]])
             else:
                 distlist[i] = (dist, dd, ele[ij[0]], ele[ij[1]])
         distlist = np.unique(distlist)
     else:
-        for i, dist, dd, ij in itertools.izip(range(len(dij)), dij, ddij, ij0):
+        for i, dist, dd, ij in zip(list(range(len(dij))), dij, ddij, ij0):
             distlist[i] = (dist, dd, '%s.%i' % (ele[ij[0]], ij[0]), '%s.%i' % (ele[ij[1]], ij[1]))
     
     distlist.sort(order='distance')

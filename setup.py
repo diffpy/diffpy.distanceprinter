@@ -5,6 +5,8 @@
 """Distance Printer
 """
 
+from future import standard_library
+standard_library.install_aliases()
 import os
 import glob
 from setuptools import setup, find_packages
@@ -38,7 +40,7 @@ def gitinfo():
 
 
 def getversioncfg():
-    from ConfigParser import RawConfigParser
+    from configparser import RawConfigParser
     vd0 = dict(version=FALLBACK_VERSION, commit='', date='', timestamp=0)
     # first fetch data from gitarchivecfgfile, ignore if it is unexpanded
     g = vd0.copy()
