@@ -14,6 +14,7 @@
 
 from builtins import zip
 from builtins import range
+from io import open
 import os
 import sys
 import itertools
@@ -91,7 +92,12 @@ def formatResults(stru, distlist, complete, all0ddij, **kw):
 
 
 def writeToFile(filename, rv):
-    f = file(filename, 'w')
+    f = open(filename, 'w', encoding="utf-8")
+    try:
+        rv = rv.decode('utf-8')
+    except AttributeError:
+        # No need to decode in python 3
+        pass
     f.write(rv)
     f.close()
     return

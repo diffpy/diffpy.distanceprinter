@@ -1,4 +1,5 @@
 import os
+from io import open
 
 from DistancePrinter.distanceprinter import main
 
@@ -20,15 +21,21 @@ def test_distanceprinter(monkeypatch):
     cwd = os.getcwd()
     main()
     generated_file_path = os.path.join(cwd, 'temp.res')
-    f = file(generated_file_path, 'r')
+    f = open(generated_file_path, 'r', encoding="utf-8")
     rv0 = f.readlines()
     rv0 = ''.join(rv0)
-    resultstr = rv0
+    try:
+        resultstr = rv0.encode("utf-8")
+    except:
+        pass
     os.remove(generated_file_path)
     output_file_dir = os.path.join(current_module_dir, "ouputs")
     example_output = os.path.join(output_file_dir, "temp_test.res")
-    f = file(example_output, 'r')
+    f = open(example_output, 'r', encoding="utf-8")
     rv1 = f.readlines()
     rv1 = ''.join(rv1)
-    teststr = rv1
+    try:
+        teststr = rv1.encode("utf-8")
+    except:
+        pass
     assert resultstr == teststr
