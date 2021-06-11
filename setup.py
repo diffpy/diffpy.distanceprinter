@@ -27,10 +27,10 @@ gitarchivecfgfile = versioncfgfile.replace('version.cfg', 'gitarchive.cfg')
 
 def gitinfo():
     from subprocess import Popen, PIPE
-    kw = dict(stdout=PIPE, cwd=MYDIR)
+    kw = dict(stdout=PIPE, cwd=MYDIR, universal_newlines=True)
     proc = Popen(['git', 'describe', '--match=v[[:digit:]]*'], **kw)
     desc = proc.stdout.read()
-    proc = Popen(['git', 'log', '-1', '--format=%H %at %ai'], **kw)
+    proc = Popen(['git', 'log', '-1', '--format=%H %ct %ci'], **kw)
     glog = proc.stdout.read()
     rv = dict(version=FALLBACK_VERSION)
     if desc != '':
@@ -106,6 +106,7 @@ setup_args = dict(
             'Operating System :: POSIX',
             'Programming Language :: Python :: 2.6',
             'Programming Language :: Python :: 2.7',
+            'Programming Language :: Python :: 3.7',
             'Topic :: Scientific/Engineering :: Physics',
         ],
 )
