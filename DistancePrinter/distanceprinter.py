@@ -18,7 +18,8 @@ import itertools
 import numpy as np
 
 from diffpy.pdffit2 import PdfFit
-from diffpy.Structure import PDFFitStructure
+from diffpy.structure import PDFFitStructure
+
 
 def calDistance(strufile, atomi, atomj, lb, ub, complete):
     
@@ -26,7 +27,7 @@ def calDistance(strufile, atomi, atomj, lb, ub, complete):
     pdffit = PdfFit()
     pdffit.add_structure(stru)
     ele = stru.element
-        
+
     rv = pdffit.bond_length_types(atomi, atomj, lb, ub)
     dij = np.around(rv['dij'], 6)
     ddij = np.around(rv['ddij'], 10)
@@ -58,7 +59,8 @@ def calDistance(strufile, atomi, atomj, lb, ub, complete):
     rv['stru'] = stru
     rv['strufile'] = strufile
     return rv
-         
+
+
 def formatResults(stru, distlist, complete, all0ddij, **kw):
     '''
     format the distlist to string
@@ -85,11 +87,13 @@ def formatResults(stru, distlist, complete, all0ddij, **kw):
     rv = '\n'.join(lines)
     return rv
 
+
 def writeToFile(filename, rv):
     f = file(filename, 'w')
     f.write(rv)
     f.close()
     return
+
 
 def main():
     sysargv = sys.argv[1:]
@@ -101,6 +105,7 @@ def main():
     strv = formatResults(**rv)
     writeToFile(filename, strv)
     return
+
 
 if __name__ == '__main__':
     main()
