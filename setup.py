@@ -9,10 +9,7 @@ from future import standard_library
 standard_library.install_aliases()
 import os
 import glob
-from setuptools import setup, find_packages
 
-
-import os
 from setuptools import setup, find_packages
 
 # Use this version when git data are not available, like in git zip archive.
