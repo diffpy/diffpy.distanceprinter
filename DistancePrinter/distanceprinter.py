@@ -15,9 +15,7 @@
 from builtins import zip
 from builtins import range
 from io import open
-import os
 import sys
-import itertools
 import numpy as np
 
 from diffpy.pdffit2 import PdfFit
