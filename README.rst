@@ -9,7 +9,7 @@ REQUIREMENTS
 
 The DistancePrinter requires Python 2.7 and the following software:
 
-* ``diffpy.pdffit``
+* ``diffpy.pdffit2``
 
 INSTALLATION
 ------------------------------------------------------------------------

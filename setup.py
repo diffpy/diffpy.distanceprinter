@@ -5,12 +5,10 @@
 """Distance Printer
 """
 
+from future import standard_library
+standard_library.install_aliases()
 import os
-import glob
-from setuptools import setup, find_packages
 
-
-import os
 from setuptools import setup, find_packages
 
 # Use this version when git data are not available, like in git zip archive.
@@ -25,10 +23,10 @@ gitarchivecfgfile = versioncfgfile.replace('version.cfg', 'gitarchive.cfg')
 
 def gitinfo():
     from subprocess import Popen, PIPE
-    kw = dict(stdout=PIPE, cwd=MYDIR)
+    kw = dict(stdout=PIPE, cwd=MYDIR, universal_newlines=True)
     proc = Popen(['git', 'describe', '--match=v[[:digit:]]*'], **kw)
     desc = proc.stdout.read()
-    proc = Popen(['git', 'log', '-1', '--format=%H %at %ai'], **kw)
+    proc = Popen(['git', 'log', '-1', '--format=%H %ct %ci'], **kw)
     glog = proc.stdout.read()
     rv = dict(version=FALLBACK_VERSION)
     if desc != '':
@@ -38,7 +36,7 @@ def gitinfo():
 
 
 def getversioncfg():
-    from ConfigParser import RawConfigParser
+    from configparser import RawConfigParser
     vd0 = dict(version=FALLBACK_VERSION, commit='', date='', timestamp=0)
     # first fetch data from gitarchivecfgfile, ignore if it is unexpanded
     g = vd0.copy()
@@ -104,6 +102,7 @@ setup_args = dict(
             'Operating System :: POSIX',
             'Programming Language :: Python :: 2.6',
             'Programming Language :: Python :: 2.7',
+            'Programming Language :: Python :: 3.7',
             'Topic :: Scientific/Engineering :: Physics',
         ],
 )
