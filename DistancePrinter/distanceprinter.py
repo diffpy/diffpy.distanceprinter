@@ -12,13 +12,11 @@
 #
 ##############################################################################
 
-import os
 import sys
-import itertools
 import numpy as np
 
 from diffpy.pdffit2 import PdfFit
-from diffpy.Structure import PDFFitStructure
+from diffpy.structure import PDFFitStructure
 
 def calDistance(strufile, atomi, atomj, lb, ub, complete):
     
@@ -38,14 +36,14 @@ def calDistance(strufile, atomi, atomj, lb, ub, complete):
     distlist = np.zeros(len(dij), dtype=dtypec)
     
     if not complete:
-        for i, dist, dd, ij in itertools.izip(range(len(dij)), dij, ddij, ij0):
+        for i, dist, dd, ij in zip(list(range(len(dij))), dij, ddij, ij0):
             if ij[0] > ij[1]:
                 distlist[i] = (dist, dd, ele[ij[1]], ele[ij[0]])
             else:
                 distlist[i] = (dist, dd, ele[ij[0]], ele[ij[1]])
         distlist = np.unique(distlist)
     else:
-        for i, dist, dd, ij in itertools.izip(range(len(dij)), dij, ddij, ij0):
+        for i, dist, dd, ij in zip(list(range(len(dij))), dij, ddij, ij0):
             distlist[i] = (dist, dd, '%s.%i' % (ele[ij[0]], ij[0]), '%s.%i' % (ele[ij[1]], ij[1]))
     
     distlist.sort(order='distance')
@@ -78,15 +76,26 @@ def formatResults(stru, distlist, complete, all0ddij, **kw):
     
     if complete:
         for dist in distlist:
-            lines.append('%s-%s:\t%2.6f' % (dist[2], dist[3], dist[0]))
+            try:
+                lines.append('%s-%s:\t%2.6f' % (dist[2].decode('utf-8'), dist[3].decode('utf-8'), dist[0]))
+            except AttributeError:
+                lines.append('%s-%s:\t%2.6f' % (dist[2], dist[3], dist[0]))
     else:
         for dist in distlist:
-            lines.append('%s-%s:\t%2.6f (%1.1e)' % (dist[2], dist[3], dist[0], dist[1]))
+            try:
+                lines.append('%s-%s:\t%2.6f (%1.1e)' % (dist[2].decode('utf-8'), dist[3].decode('utf-8'), dist[0], dist[1]))
+            except AttributeError:
+                lines.append('%s-%s:\t%2.6f (%1.1e)' % (dist[2], dist[3], dist[0], dist[1]))
     rv = '\n'.join(lines)
     return rv
 
 def writeToFile(filename, rv):
-    f = file(filename, 'w')
+    f = open(filename, 'w', encoding="utf-8")
+    try:
+        rv = rv.decode('utf-8')
+    except AttributeError:
+        # No need to decode in python 3
+        pass
     f.write(rv)
     f.close()
     return
