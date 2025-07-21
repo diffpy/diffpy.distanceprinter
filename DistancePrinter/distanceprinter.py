@@ -36,14 +36,14 @@ def calDistance(strufile, atomi, atomj, lb, ub, complete):
     distlist = np.zeros(len(dij), dtype=dtypec)
     
     if not complete:
-        for i, dist, dd, ij in zip(list(range(len(dij)), dij, ddij, ij0)):
+        for i, dist, dd, ij in zip(range(len(dij)), dij, ddij, ij0):
             if ij[0] > ij[1]:
                 distlist[i] = (dist, dd, ele[ij[1]], ele[ij[0]])
             else:
                 distlist[i] = (dist, dd, ele[ij[0]], ele[ij[1]])
         distlist = np.unique(distlist)
     else:
-        for i, dist, dd, ij in zip(list(range(len(dij)), dij, ddij, ij0)):
+        for i, dist, dd, ij in zip(range(len(dij)), dij, ddij, ij0):
             distlist[i] = (dist, dd, '%s.%i' % (ele[ij[0]], ij[0]), '%s.%i' % (ele[ij[1]], ij[1]))
     
     distlist.sort(order='distance')
@@ -93,8 +93,12 @@ def writeToFile(filename, rv):
     f = open(filename, 'w', encoding="utf-8")
     try:
         rv = rv.decode('utf-8')
+        f.write(rv)
+        f.close()
     except AttributeError:
         # No need to decode in python 3
+        f.write(rv)
+        f.close()
         pass
 
 def main():
