@@ -6,11 +6,7 @@
 """
 
 import os
-import glob
-from setuptools import setup, find_packages
-
-
-import os
+import glob 
 from setuptools import setup, find_packages
 
 # Use this version when git data are not available, like in git zip archive.
@@ -32,13 +28,13 @@ def gitinfo():
     glog = proc.stdout.read()
     rv = dict(version=FALLBACK_VERSION)
     if desc != '':
-        rv['version'] = '-'.join(desc.strip().split('-')[:2]).lstrip('v')
+        rv['version'] = b'-'.join(desc.strip().split(b'-')[:2]).lstrip(b'v')
     rv['commit'], rv['timestamp'], rv['date'] = glog.strip().split(None, 2)
     return rv
 
 
 def getversioncfg():
-    from ConfigParser import RawConfigParser
+    from configparser import RawConfigParser
     vd0 = dict(version=FALLBACK_VERSION, commit='', date='', timestamp=0)
     # first fetch data from gitarchivecfgfile, ignore if it is unexpanded
     g = vd0.copy()
@@ -102,8 +98,7 @@ setup_args = dict(
             'Operating System :: MacOS',
             'Operating System :: Microsoft :: Windows',
             'Operating System :: POSIX',
-            'Programming Language :: Python :: 2.6',
-            'Programming Language :: Python :: 2.7',
+            'Programming Language :: Python :: 3.13',
             'Topic :: Scientific/Engineering :: Physics',
         ],
 )
