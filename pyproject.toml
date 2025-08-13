@@ -32,7 +32,7 @@ classifiers = [
         'Topic :: Scientific/Engineering :: Chemistry',
 ]
 
-[project.entrypoints]
+[project.scripts]
 distanceprinter = 'DistancePrinter.distanceprinter:main'
 
 [project.urls]
