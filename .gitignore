@@ -43,3 +43,6 @@ nosetests.xml
 setup.cfg
 /DistancePrinter/version.cfg
 /DistancePrinter/gitarchive.cfg
+
+# test output
+actual.res
