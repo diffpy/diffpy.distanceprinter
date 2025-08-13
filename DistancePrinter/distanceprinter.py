@@ -18,7 +18,7 @@ import itertools
 import numpy as np
 
 from diffpy.pdffit2 import PdfFit
-from diffpy.Structure import PDFFitStructure
+from diffpy.structure import PDFFitStructure
 
 def calDistance(strufile, atomi, atomj, lb, ub, complete):
     
