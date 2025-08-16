@@ -1,7 +1,7 @@
 import os
 from io import open
 
-from DistancePrinter.distanceprinter import main
+from diffpy.distanceprinter.distanceprinter import main
 
 
 def test_distanceprinter(monkeypatch):
