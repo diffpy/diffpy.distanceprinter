@@ -18,10 +18,10 @@ To install the DistancePrinter package:
 
     python setup.py install
 
-By default the files are installed in the system directories, which are 
-usually only writeable by the root.  See the usage info "./setup.py install 
---help" for options to install as a normal user under a different location.  
-Note that installation to non-standard directories you may require adjustments 
+By default the files are installed in the system directories, which are
+usually only writeable by the root.  See the usage info "./setup.py install
+--help" for options to install as a normal user under a different location.
+Note that installation to non-standard directories you may require adjustments
 to the PATH and PYTHONPATH environment variables.
 
 CONTACTS

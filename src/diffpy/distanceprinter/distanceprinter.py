@@ -13,6 +13,7 @@
 ##############################################################################
 
 import sys
+
 import numpy as np
 
 from diffpy.pdffit2 import PdfFit
@@ -70,9 +71,7 @@ def calDistance(strufile, atomi, atomj, lb, ub, complete):
 
 
 def formatResults(stru, distlist, complete, all0ddij, **kw):
-    """
-    format the distlist to string
-    """
+    """Format the distlist to string."""
     lines = []
     # header
     lines.append("# Structure file: %s" % kw["strufile"])
