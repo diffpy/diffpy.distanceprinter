@@ -1,11 +1,11 @@
 # Structure file: /home/zthatcher/GitLab/dev/dpx.distanceprinter/tests/test_files/Ni-9008476.cif
-# 
+#
 # lattice=Lattice(a=3.52387, b=3.52387, c=3.52387, alpha=90, beta=90, gamma=90)
 #  0 Ni   0.000000 0.000000 0.000000 1.0000
 #  1 Ni   0.000000 0.500000 0.500000 1.0000
 #  2 Ni   0.500000 0.000000 0.500000 1.0000
 #  3 Ni   0.500000 0.500000 0.000000 1.0000
-# 
+#
 # Inter-atomic distance of (all, all) in (1.00, 10.00) A
 
 Ni.0-Ni.1:	2.491752

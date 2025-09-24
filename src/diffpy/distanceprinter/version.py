@@ -15,8 +15,8 @@
 
 """Definition of __version__, __date__, __gitsha__."""
 
-from pkg_resources import resource_filename
 from ConfigParser import RawConfigParser
+from pkg_resources import resource_filename
 
 # obtain version information from the version.cfg file
 cp = RawConfigParser(dict(version="", date="", commit="", timestamp=0))
