@@ -65,7 +65,7 @@ wrap-summaries = 72
 wrap-descriptions = 72
 
 [tool.black]
-line-length = 79
+line-length = 112
 include = '\.pyi?$'
 exclude = '''
 /(
