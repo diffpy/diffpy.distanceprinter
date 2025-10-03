@@ -9,13 +9,15 @@ def test_distanceprinter(monkeypatch):
     example_file_dir = os.path.join(current_module_dir, "data")
     # must be cif, stru, or xyz file
     strufile = os.path.join(example_file_dir, "Ni-9008476.cif")
-    # atoms typically pull from list of elements in stru output of PDFFitStructure. 'all' is always first option
+    # atoms typically pull from list of elements in output of PDFFitStructure.
+    # 'all' is always first option
     atomi = "all"
     atomj = "all"
     # lb and ub are lower an upper bound of distance to list in angstroms
     lb = 1
     ub = 10
-    #  1 means keep duplicate atom pairs with same inter-atomic distance, 0 means not to
+    # 1 means keep duplicate atom pairs with same inter-atomic distance
+    # 0 means not to
     comp = "1"
     monkeypatch.setattr(
         "sys.argv",
@@ -44,7 +46,7 @@ def test_distanceprinter(monkeypatch):
     rv1 = "".join(rv1)
     teststr = rv1
 
-    # Remove structure file path when comparing as it may differ between machines
+    # Remove stru file path when comparing as it may differ between machines
     resultstr = resultstr.split("\n", 2)[2]
     teststr = teststr.split("\n", 2)[2]
     assert resultstr == teststr
