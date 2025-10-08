@@ -6,13 +6,13 @@ build-backend = "setuptools.build_meta"
 name = "diffpy.distanceprinter"
 dynamic=['version', 'dependencies']
 authors = [
-  { name="Simon J.L. Billinge group", email="simon.billinge@gmail.com" },
+  { name="Simon J.L. Billinge Group", email="sb2896@columbia.edu" },
 ]
 maintainers = [
-  { name="Simon J.L. Billinge group", email="simon.billinge@gmail.com" },
+  { name="Simon J.L. Billinge Group", email="sb2896@columbia.edu" },
 ]
 description = "Distance Printer, calculate the inter atomic distances. Part of xPDFsuite"
-keywords = ['diffpy', 'pdf', 'data interpretation']
+keywords = ['diffpy', 'pdf', 'data-interpretation']
 readme = "README.rst"
 requires-python = ">=3.11, <3.14"
 classifiers = [
@@ -32,9 +32,6 @@ classifiers = [
         'Topic :: Scientific/Engineering :: Chemistry',
 ]
 
-[project.scripts]
-distanceprinter = 'diffpy.distanceprinter.distanceprinter:main'
-
 [project.urls]
 Homepage = "https://github.com/diffpy/diffpy.distanceprinter/"
 Issues = "https://github.com/diffpy/diffpy.distanceprinter/issues/"
@@ -51,13 +48,16 @@ include = ["*"]  # package names should match these glob patterns (["*"] by defa
 exclude = []  # exclude packages matching these glob patterns (empty by default)
 namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
 
+[project.scripts]
+diffpy-distanceprinter = "diffpy.distanceprinter.app:main"
+
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements/pip.txt"]}
 
 [tool.codespell]
 exclude-file = ".codespell/ignore_lines.txt"
 ignore-words = ".codespell/ignore_words.txt"
-skip = "*.cif,*.dat,*agr"
+skip = "*.cif,*.dat"
 
 [tool.docformatter]
 recursive = true
