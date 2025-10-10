@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 ##############################################################################
 #
-# DistancePrinter   by Simon J. L. Billinge group
-#                   (c) 2013 Trustees of the Columbia University
-#                   in the City of New York.  All rights reserved.
+# (c) 2013-2025 The Trustees of Columbia University in the City of New York.
+# All rights reserved.
 #
-# File coded by:    Xiaohao Yang
+# File coded by: Xiaohao Yang and Billinge Group members
 #
-# See AUTHORS.txt for a list of people who contributed.
-# See LICENSENOTICE.txt for license information.
+# See GitHub contributions for a more detailed list of contributors.
+# https://github.com/diffpy/diffpy.distanceprinter/graphs/contributors
+# noqa: E501
+#
+# See LICENSE.rst for license information.
 #
 ##############################################################################
-
-# Placeholder until this gets scikit-packaged later

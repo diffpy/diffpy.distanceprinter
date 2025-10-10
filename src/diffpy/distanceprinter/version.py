@@ -1,35 +1,27 @@
 #!/usr/bin/env python
 ##############################################################################
 #
-# DistancePrinter   by Simon J. L. Billinge group
-#                   (c) 2013 Trustees of the Columbia University
-#                   in the City of New York.  All rights reserved.
+# (c) 2013-2025 The Trustees of Columbia University in the City of New York.
+# All rights reserved.
 #
-# File coded by:    Xiaohao Yang
+# File coded by: Xiaohao Yang and Billinge Group members
 #
-# See AUTHORS.txt for a list of people who contributed.
-# See LICENSENOTICE.txt for license information.
+# See GitHub contributions for a more detailed list of contributors.
+# https://github.com/diffpy/diffpy.distanceprinter/graphs/contributors
+# noqa: E501
+#
+# See LICENSE.rst for license information.
 #
 ##############################################################################
+"""Definition of __version__."""
 
+#  We do not use the other three variables, but can be added back if needed.
+#  __all__ = ["__date__", "__git_commit__", "__timestamp__", "__version__"]
 
-"""Definition of __version__, __date__, __gitsha__."""
+# obtain version information
+from importlib.metadata import PackageNotFoundError, version
 
-from ConfigParser import RawConfigParser
-from pkg_resources import resource_filename
-
-# obtain version information from the version.cfg file
-cp = RawConfigParser(dict(version="", date="", commit="", timestamp=0))
-if not cp.read(resource_filename(__name__, "version.cfg")):
-    from warnings import warn
-
-    warn('Package metadata not found, execute "./setup.py egg_info".')
-
-__version__ = cp.get("DEFAULT", "version")
-__date__ = cp.get("DEFAULT", "date")
-__gitsha__ = cp.get("DEFAULT", "commit")
-__timestamp__ = cp.getint("DEFAULT", "timestamp")
-
-del cp
-
-# End of file
+try:
+    __version__ = version("diffpy.distanceprinter")
+except PackageNotFoundError:
+    __version__ = "unknown"
