@@ -8,29 +8,17 @@
         :target: https://diffpy.github.io/diffpy.distanceprinter
         :height: 100px
 
-|PyPI| |Forge| |PythonVersion| |PR|
+|PythonVersion| |PR|
 
-|CI| |Codecov| |Black| |Tracking|
+|Black| |Tracking|
 
 .. |Black| image:: https://img.shields.io/badge/code_style-black-black
         :target: https://github.com/psf/black
 
-.. |CI| image:: https://github.com/diffpy/diffpy.distanceprinter/actions/workflows/matrix-and-codecov-on-merge-to-main.yml/badge.svg
-        :target: https://github.com/diffpy/diffpy.distanceprinter/actions/workflows/matrix-and-codecov-on-merge-to-main.yml
-
-.. |Codecov| image:: https://codecov.io/gh/diffpy/diffpy.distanceprinter/branch/main/graph/badge.svg
-        :target: https://codecov.io/gh/diffpy/diffpy.distanceprinter
-
-.. |Forge| image:: https://img.shields.io/conda/vn/conda-forge/diffpy.distanceprinter
-        :target: https://anaconda.org/conda-forge/diffpy.distanceprinter
-
 .. |PR| image:: https://img.shields.io/badge/PR-Welcome-29ab47ff
         :target: https://github.com/diffpy/diffpy.distanceprinter/pulls
 
-.. |PyPI| image:: https://img.shields.io/pypi/v/diffpy.distanceprinter
-        :target: https://pypi.org/project/diffpy.distanceprinter/
-
-.. |PythonVersion| image:: https://img.shields.io/pypi/pyversions/diffpy.distanceprinter
+.. |PythonVersion| image:: https://img.shields.io/badge/python-3.11%20|%203.12%20|%203.13-blue
         :target: https://pypi.org/project/diffpy.distanceprinter/
 
 .. |Tracking| image:: https://img.shields.io/badge/issue_tracking-github-blue
