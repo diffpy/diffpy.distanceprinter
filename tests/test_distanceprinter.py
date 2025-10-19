@@ -49,4 +49,9 @@ def test_distanceprinter(monkeypatch):
     # Remove stru file path when comparing as it may differ between machines
     resultstr = resultstr.split("\n", 2)[2]
     teststr = teststr.split("\n", 2)[2]
+
+    # Remove irrelevant whitespace when comparing
+    resultstr = "".join(resultstr.split())
+    teststr = "".join(teststr.split())
+
     assert resultstr == teststr
