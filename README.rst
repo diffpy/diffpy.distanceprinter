@@ -33,7 +33,7 @@ If you use diffpy.distanceprinter in a scientific publication, we would like you
 
         Xiaohao Yang, Pavol Juhas, Christopher L. Farrow and Simon J. L. Billinge, xPDFsuite: an end-to-end
         software solution for high throughput pair distribution function transformation, visualization and
-        analysis, arXiv 1402.3163 (2014)
+        analysis, arXiv 1402.3163 (2025)
 
 Installation
 ------------

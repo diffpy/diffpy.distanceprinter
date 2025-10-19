@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # diffpy.distanceprinter documentation build configuration file, created by  # noqa: E501
-# sphinx-quickstart on Thu Jan 30 15:49:41 2014.
+# sphinx-quickstart on Thu Jan 30 15:49:41 2025.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
