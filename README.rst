@@ -51,10 +51,10 @@ Assuming you have a wheel file in the current working directory, in an active co
 where you replace VERSION with the actual version you have so the command matches the filename of the
 wheel file you have.
 
-The commands to create and activate the conda environment with name "conf-env" is
+The commands to create and activate the conda environment with name "distanceprinter-env" is
 
-    conda create -n conf-env python=3.13
-    conda activate conf-env
+    conda create -n distanceprinter-env python=3.13
+    conda activate distanceprinter-env
 
 If you don't have conda installed, we recomment you install `miniconda
 <https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html>`_
@@ -67,7 +67,7 @@ from `GitHub <https://github.com/diffpy/diffpy.distanceprinter/>`_.
 Install the packages in ``./requirements/conda.txt`` and ``./requirements/tests.txt``
 using the `--file`` command:
 
-    conda activate conf-env
+    conda activate distanceprinter-env
     conda install --file ./requirements/conda.txt
     conda install --file ./requirements/tests.txt
     pip install -e .    # assuming you are in the top level directory of the package
