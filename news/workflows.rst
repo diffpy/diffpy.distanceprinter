@@ -1,10 +1,10 @@
 **Added:**
 
-* <news item>
+* No news: Specified python version to use when running tests-on-pr workflow
 
 **Changed:**
 
-* Specified python version to use when running tests-on-pr workflow
+* <news item>
 
 **Deprecated:**
 
