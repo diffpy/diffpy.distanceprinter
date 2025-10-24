@@ -15,9 +15,6 @@
 .. |Black| image:: https://img.shields.io/badge/code_style-black-black
         :target: https://github.com/psf/black
 
-.. |PR| image:: https://img.shields.io/badge/PR-Welcome-29ab47ff
-        :target: https://github.com/diffpy/diffpy.distanceprinter/pulls
-
 .. |PythonVersion| image:: https://img.shields.io/badge/python-3.11%20|%203.12%20|%203.13-blue
         :target: https://pypi.org/project/diffpy.distanceprinter/
 
