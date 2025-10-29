@@ -7,7 +7,8 @@ def main():
     parser = argparse.ArgumentParser(
         prog="diffpy.distanceprinter",
         description=(
-            "Distance Printer, calculate the inter atomic distances. Part of xPDFsuite.\n\n"
+            "Distance Printer, calculate the inter atomic distances. "
+            "Part of xPDFsuite.\n\n"
             "For more information, visit: "
             "https://github.com/diffpy/diffpy.distanceprinter/"
         ),
