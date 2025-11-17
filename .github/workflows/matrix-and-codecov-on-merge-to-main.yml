@@ -17,6 +17,5 @@ jobs:
       project: diffpy.distanceprinter
       c_extension: false
       headless: false
-      extra_install_commands: conda install -y -c conda-forge gsl
     secrets:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
