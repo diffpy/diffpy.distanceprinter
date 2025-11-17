@@ -1,4 +1,3 @@
 numpy
-gsl
 diffpy.pdffit2
 diffpy.structure
