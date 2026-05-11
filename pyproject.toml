@@ -49,7 +49,7 @@ exclude = []  # exclude packages matching these glob patterns (empty by default)
 namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
 
 [project.scripts]
-diffpy-distanceprinter = "diffpy.distanceprinter.distanceprinter_app:main"
+distanceprinter = "diffpy.distanceprinter.distanceprinter:main"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements/pip.txt"]}
@@ -59,10 +59,11 @@ exclude-file = ".codespell/ignore_lines.txt"
 ignore-words = ".codespell/ignore_words.txt"
 skip = "*.cif,*.dat"
 
-[tool.docformatter]
-recursive = true
-wrap-summaries = 72
-wrap-descriptions = 72
+[tool.ruff]
+line-length = 72
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
 
 [tool.black]
 line-length = 79
