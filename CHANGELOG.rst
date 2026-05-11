@@ -4,6 +4,14 @@ Release notes
 
 .. current developments
 
+1.0.1
+=====
+
+**Fixed:**
+
+* Fixed command line control usability
+
+
 1.0.0
 =====
 
