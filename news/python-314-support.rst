@@ -1,10 +1,10 @@
 **Added:**
 
-* <news item>
+* Added support for Python 3.14.
 
 **Changed:**
 
-* Added support for Python 3.14.
+* <news item>
 
 **Deprecated:**
 
