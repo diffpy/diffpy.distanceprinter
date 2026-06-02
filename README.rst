@@ -36,16 +36,18 @@
 .. |Tracking| image:: https://img.shields.io/badge/issue_tracking-github-blue
         :target: https://github.com/diffpy/diffpy.distanceprinter/issues
 
-Distance Printer, calculate the inter atomic distances. Part of xPDFsuite
+Distance Printer, calculate the inter atomic distances. Part of xPDFsuite.
+
+* LONGER DESCRIPTION HERE
+
+For more information about the diffpy.distanceprinter library, please consult our `online documentation <https://diffpy.github.io/diffpy.distanceprinter>`_.
 
 Citation
 --------
 
 If you use diffpy.distanceprinter in a scientific publication, we would like you to cite this package as
 
-        Xiaohao Yang, Pavol Juhas, Christopher L. Farrow and Simon J. L. Billinge, xPDFsuite: an end-to-end
-        software solution for high throughput pair distribution function transformation, visualization and
-        analysis, arXiv 1402.3163 (2025)
+        diffpy.distanceprinter Package, https://github.com/diffpy/diffpy.distanceprinter
 
 Installation
 ------------
@@ -91,6 +93,11 @@ To view the basic usage and available commands, type ::
 
         diffpy.distanceprinter -h
 
+Getting Started
+---------------
+
+You may consult our `online documentation <https://diffpy.github.io/diffpy.distanceprinter>`_ for tutorials and API references.
+
 Support and Contribute
 ----------------------
 
@@ -119,15 +126,10 @@ Improvements and fixes are always appreciated.
 
 Before contributing, please read our `Code of Conduct <https://github.com/diffpy/diffpy.distanceprinter/blob/main/CODE-OF-CONDUCT.rst>`_.
 
-Getting Started
----------------
-
-You may consult our `online documentation <https://diffpy.github.io/diffpy.distanceprinter>`_ for tutorials and API references.
-
 Contact
 -------
 
-For more information on diffpy.distanceprinter please visit the project `web-page <https://www.diffpy.org>`_ or email Simon J.L. Billinge Group at sb2896@columbia.edu.
+For more information on diffpy.distanceprinter please visit the project `web-page <https://diffpy.github.io/>`_ or email the maintainers ``Simon Billinge(sbillinge@ucsb.edu) and Sangjoon Bob Lee(sl5400@columbia.edu)``.
 
 Acknowledgements
 ----------------

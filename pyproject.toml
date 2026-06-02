@@ -6,12 +6,14 @@ build-backend = "setuptools.build_meta"
 name = "diffpy.distanceprinter"
 dynamic=['version', 'dependencies']
 authors = [
-  { name="Simon J.L. Billinge Group", email="sb2896@columbia.edu" },
+  {name='Simon Billinge', email='sbillinge@ucsb.edu'},
+  {name='Sangjoon Bob Lee', email='sl5400@columbia.edu'},
 ]
 maintainers = [
-  { name="Simon J.L. Billinge Group", email="sb2896@columbia.edu" },
+  {name='Simon Billinge', email='sbillinge@ucsb.edu'},
+  {name='Sangjoon Bob Lee', email='sl5400@columbia.edu'},
 ]
-description = "Distance Printer, calculate the inter atomic distances. Part of xPDFsuite"
+description = "Distance Printer, calculate the inter atomic distances. Part of xPDFsuite."
 keywords = ['diffpy', 'pdf', 'data-interpretation']
 readme = "README.rst"
 requires-python = ">=3.12, <3.15"

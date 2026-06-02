@@ -15,15 +15,13 @@ Getting started
 
 Welcome to the ``diffpy.distanceprinter`` documentation!
 
-This package is not designed to be installed independently. To get started, please visit
-https://www.diffpy.org/products/xPDFsuite.html for more information about the xpdfsuite package and
-download the package together with ``diffpy.xpdfsuite``.
+To get started, please visit the :ref:`Getting started <getting-started>` page.
 
 =======
 Authors
 =======
 
-``diffpy.distanceprinter`` is developed by Xiaohao Yang and Billinge Group members. The maintainer for this project is Simon Billinge. For a detailed list of contributors see
+``diffpy.distanceprinter`` is developed by Xiaohao Yang and Billinge Group members. This project is maintained by Simon Billinge and Sangjoon Bob Lee. For a detailed list of contributors see
 https://github.com/diffpy/diffpy.distanceprinter/graphs/contributors.
 
 ============
@@ -45,6 +43,7 @@ Table of contents
 .. toctree::
    :maxdepth: 2
 
+   getting-started
    Package API <api/diffpy.distanceprinter>
    release
    license

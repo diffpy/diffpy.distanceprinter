@@ -1,7 +1,9 @@
 {
-  "maintainer_name": "Simon Billinge",
-  "maintainer_email": "sb2896@columbia.edu",
-  "maintainer_github_username": "sbillinge",
+  "author_names": "Simon Billinge, Sangjoon Bob Lee",
+  "author_emails": "sbillinge@ucsb.edu, sl5400@columbia.edu",
+  "maintainer_names": "Simon Billinge, Sangjoon Bob Lee",
+  "maintainer_emails": "sbillinge@ucsb.edu, sl5400@columbia.edu",
+  "maintainer_github_usernames": "sbillinge, bobleesj",
   "contributors": "Xiaohao Yang and Billinge Group members",
   "license_holders": "The Trustees of Columbia University in the City of New York",
   "project_name": "diffpy.distanceprinter",
