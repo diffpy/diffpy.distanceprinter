@@ -15,7 +15,9 @@ Getting started
 
 Welcome to the ``diffpy.distanceprinter`` documentation!
 
-To get started, please visit the :ref:`Getting started <getting-started>` page.
+This package is not designed to be installed independently. To get started, please visit
+https://www.diffpy.org/products/xPDFsuite.html for more information about the xpdfsuite package and
+download the package together with ``diffpy.xpdfsuite``.
 
 =======
 Authors
