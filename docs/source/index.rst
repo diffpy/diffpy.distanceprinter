@@ -23,7 +23,7 @@ download the package together with ``diffpy.xpdfsuite``.
 Authors
 =======
 
-``diffpy.distanceprinter`` is developed by Xiaohao Yang and Billinge Group members. The maintainer for this project is Simon Billinge. For a detailed list of contributors see
+``diffpy.distanceprinter`` is developed by Xiaohao Yang and Billinge Group members. This project is maintained by Simon Billinge and Billinge Group members. For a detailed list of contributors see
 https://github.com/diffpy/diffpy.distanceprinter/graphs/contributors.
 
 ============

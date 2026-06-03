@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # diffpy.distanceprinter documentation build configuration file, created by  # noqa: E501
-# sphinx-quickstart on Thu Jan 30 15:49:41 2025.
+# sphinx-quickstart on Thu Jan 30 15:49:41 2014.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -32,9 +32,7 @@ sys.path.insert(0, str(Path("../..").resolve()))
 sys.path.insert(0, str(Path("../../src").resolve()))
 
 # abbreviations
-ab_authors = (
-    "Xiaohao Yang, Sangjoon Lee, Simon Billinge, Billinge Group members"
-)
+ab_authors = "Xiaohao Yang and Billinge Group members"
 
 # -- General configuration ------------------------------------------------
 
@@ -52,7 +50,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_rtd_theme",
     "sphinx_copybutton",
-    "m2r",
+    "m2r2",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
