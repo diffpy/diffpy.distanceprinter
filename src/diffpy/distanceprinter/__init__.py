@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 ##############################################################################
 #
-# (c) 2026 The Trustees of Columbia University in the City of New York.
+# (c) 2013-2025 The Trustees of Columbia University in the City of New York.
+# (c) 2026-present, The Contributors to the diffpy.distanceprinter project.
 # All rights reserved.
 #
 # File coded by: Xiaohao Yang and Billinge Group members.

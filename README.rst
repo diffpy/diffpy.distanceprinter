@@ -38,8 +38,6 @@
 
 Distance Printer, calculate the inter atomic distances. Part of xPDFsuite.
 
-* LONGER DESCRIPTION HERE
-
 For more information about the diffpy.distanceprinter library, please consult our `online documentation <https://diffpy.github.io/diffpy.distanceprinter>`_.
 
 Citation
@@ -47,7 +45,9 @@ Citation
 
 If you use diffpy.distanceprinter in a scientific publication, we would like you to cite this package as
 
-        diffpy.distanceprinter Package, https://github.com/diffpy/diffpy.distanceprinter
+        Xiaohao Yang, Pavol Juhas, Christopher L. Farrow and Simon J. L. Billinge, xPDFsuite: an end-to-end
+        software solution for high throughput pair distribution function transformation, visualization and
+        analysis, arXiv 1402.3163 (2025)
 
 Installation
 ------------
@@ -129,7 +129,7 @@ Before contributing, please read our `Code of Conduct <https://github.com/diffpy
 Contact
 -------
 
-For more information on diffpy.distanceprinter please visit the project `web-page <https://diffpy.github.io/>`_ or email the maintainers ``Simon Billinge(sbillinge@ucsb.edu) and Sangjoon Bob Lee(sl5400@columbia.edu)``.
+For more information on diffpy.distanceprinter please visit the project `web-page <https://diffpy.github.io/>`_ or email the maintainers ``Simon Billinge(sbillinge@ucsb.edu)``.
 
 Acknowledgements
 ----------------
