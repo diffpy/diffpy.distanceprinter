@@ -4,6 +4,18 @@ Release notes
 
 .. current developments
 
+1.1.0
+=====
+
+**Added:**
+
+* Added support for Python 3.14.
+
+**Removed:**
+
+* Removed support for Python 3.11.
+
+
 1.0.2
 =====
 
